@@ -1,0 +1,52 @@
+.container {
+    background-color: inherit;
+    width: 100%;
+}
+/* .usersPage {
+   background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 50px;
+    
+} */
+.user {
+    background-color: rgb(188, 193, 189);
+    margin: 20px;
+    width: 250px;
+    height: 400px;
+    border-radius: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.user_photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px 20px 0 0  ;
+    
+}
+
+.name {
+   font-size: 20px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin: 5px 2px;
+}
+
+.btn_follow {
+   height: 40px;
+   margin: 2px;
+   border-radius: 10px;
+   
+}
+
+.btn_unfollow {
+   height: 40px;
+   margin: 2px;
+   border-radius: 10px;
+}
