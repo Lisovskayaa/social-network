@@ -11,8 +11,6 @@ export default function ModalDeleteWerification(props) {
         <div className='modal'>
             <div className="modal__content">
                 <p>Ви дійсно хочете видалити публікацію? </p>
-
-
                 <div className="buttons">
                     <Button className='btn_yes' onClick={deletePost}>Yes</Button>
                     <Button className='btn_no' onClick={props.hideOptions}> No </Button>

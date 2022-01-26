@@ -3,13 +3,11 @@ import { userAPI } from "../../API/api";
 const SET_USERS = 'SET_USERS'
 const OPEN_PAGE = 'OPEN_PAGE'
 
-
 let initialState = {
     users: [],
     user: {}
 
 }
-
 
 export const usersReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -29,8 +27,6 @@ export const usersReducer = (state = initialState, action) => {
 
 export const setUsersAC = (users) => ({ type: SET_USERS, users })
 export const openPageAC = (user) => ({ type: OPEN_PAGE, user })
-
-
 
 export const getUsersThunkCreator = () => {
     return (dispatch) => {

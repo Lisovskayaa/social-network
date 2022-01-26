@@ -29,31 +29,36 @@ export default function PhotosPage(props) {
 
 function Photo(props) {
 
-     let [comments, setComments] = useState(false)
+     let [describe, setDescribe] = useState(false)
 
-     const vivisbleComments = () => {
-        setComments(true)
+     const vivisbleDescribe = () => {
+        setDescribe(true)
         console.log(true)
+        
      }
 
-     const unVisibleComments = () => {
-       setComments(false)
+     const unVisibleDescribe = () => {
+       setDescribe(false)
        console.log(false)
     }
 
+    
+    
+
+    
 
     return (
         <div className={s.photo_wrapper}>
             
                <img src={props.url} alt={'image_random'}  />
             
-            {!comments &&   
-             <ButtonMinor onClick={vivisbleComments}> Describe </ButtonMinor> }
+            {!describe &&    
+             <ButtonMinor onClick={vivisbleDescribe}> Describe </ButtonMinor> }
+            
 
-             {comments && <>
-              
+             {describe && <>
               <div className={s.describe}>  {props.title}</div>
-             <ButtonMinor onClick={unVisibleComments}> Hidden  </ButtonMinor></> }
+             <ButtonMinor onClick={unVisibleDescribe}> Hidden  </ButtonMinor></> }
      
 
             

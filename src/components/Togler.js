@@ -2,8 +2,6 @@ import React from 'react'
 import { func, string } from 'prop-types'
 import styled from 'styled-components'
 
-
-
 const ButtonS = styled.button`
 background-color: #146356 ;
   border: 2px solid ${({ theme }) => theme.toggleBorder};
@@ -15,23 +13,21 @@ background-color: #146356 ;
 
 `
 
+const Toggle = ({ theme, toggleTheme }) => {
 
-const Toggle = ({theme, toggleTheme }) => {
-
-    return (
-    
+  return (
     <ButtonS onClick={toggleTheme} >
-    Switch Theme
+      Switch Theme
     </ButtonS>
-    
-    );
-    
-    };
-    
-    Toggle.propTypes = {
-    theme: string.isRequired,
-    toggleTheme: func.isRequired,
-    
-    }
-    
-    export default Toggle;
+
+  );
+
+};
+
+Toggle.propTypes = {
+  theme: string.isRequired,
+  toggleTheme: func.isRequired,
+
+}
+
+export default Toggle;

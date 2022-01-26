@@ -7,8 +7,8 @@ const UPDATE_POST = 'UPDATE_POST'
 const ADD_COMMENT = 'ADD_COMMENT'
 
 let initialState = {
-    posts: [],
-    comments: [],
+    posts: [ {body: 'Hi', id: 1}, {body: 'Hi', id: 2} ], 
+    comments: [{id:1, email: 'Me', body: 'So....'}],
     newPost: '',
     isAuth: false
 }

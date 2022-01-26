@@ -9,18 +9,16 @@ export const Global = createGlobalStyle`
     padding: 0; 
    box-sizing: border-box;
    font-family: 'Arial';
- }
+    }
   body {
-      background: ${({theme}) => theme.body};
-      color: ${({theme}) => theme.text};
+      background: ${({ theme }) => theme.body};
+      color: ${({ theme }) => theme.text};
       font-family: Tahoma, Helvetica, Arial, Roboto, sans-serif;
       transition: all 0.50s linear;
 
 }
 
-
 `
-
 
 export const AppWrapper = styled.div`
  min-heigth: 100vh; 
@@ -56,6 +54,7 @@ export const ButtonMinor = styled.button`
 padding: 2px;
 height: 20px;
 width: auto;
+max-width: 300px;
 margin: 10px 0;
 text-decoration: none;
 

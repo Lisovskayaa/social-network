@@ -12,7 +12,7 @@ export default function Header(props) {
             <div> <NavLink to='/users'>Friends</NavLink></div>
             <div><NavLink to='/setting'> <img src={setting_icon}  alt='setting_icon'/></NavLink></div>
             <div> <Toggle theme={props.theme} toggleTheme={props.themeToggler} /></div>
-
+              
             </HeaderStyled>
     )
 }
